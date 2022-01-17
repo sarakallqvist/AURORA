@@ -9,13 +9,13 @@ font-family: 'Voltaire', sans-serif;
   text-align: left;
   padding: 1rem;
   background: url(../src/images/pastel/pier.jpg) no-repeat center center fixed;
-  /* height: 100vh; */
+  min-height: 100vh;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
 
 }
 input[type=button] {
-  background-color: #A4B1A5;
+  background-color: #CDBBB2;
   font-family: 'Lato', sans-serif;
   color: #152823;
   font-size: 16px;
