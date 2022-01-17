@@ -1,7 +1,7 @@
 
             Fonts used: Voltaire,Lato-Bold 
 
-            Colors used: 539D8B,F5C5BE  
+            Colors used: 539D8B F5C5BE  
 
             Icon url: https://thenounproject.com/term/nature/929348  
         

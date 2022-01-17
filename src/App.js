@@ -1,4 +1,4 @@
-import logo from './logos/Aurora-logos_white.png';
+import logo from './logos/Aurora-logos_black.png';
 import './App.css';
 import {
   Route,
@@ -7,19 +7,22 @@ import {
 } from "react-router-dom";
 import { HomeRoute } from './routes/home';
 import { TestRoute } from './routes/test';
+const homeIcon = require('./icons/home.svg');
+const exploreIcon = require('./icons/infinity.svg');
+const userIcon = require('./icons/user.svg');
+const cameraIcon = require('./icons/camera.svg');
+const searchIcon = require('./icons/search.svg');
 
 function App() {
   return (
     <div className="App">
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/test">Test</Link>
-          </li>
-        </ul>
+        
+        <Link to="/"><img src={homeIcon.default} className='icon-nav'></img></Link>
+        <Link to="/test"><img src={exploreIcon.default} className='icon-nav'></img></Link>
+        <Link to="/"><img src={userIcon.default} className='icon-nav'></img></Link>
+        <Link to="/"><img src={cameraIcon.default} className='icon-nav'></img></Link>
+        <Link to="/"><img src={searchIcon.default} className='icon-nav'></img></Link>
       </nav>
 
       <Routes>
@@ -28,6 +31,8 @@ function App() {
       </Routes>
     </div>
   );
+
+
 }
 
 export default App;

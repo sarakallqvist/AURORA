@@ -1,4 +1,22 @@
 .signin-form
-{
-    border: 1px solid red;
+{   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    padding: 1rem;
+    background-color: #CDBBB2;
+    opacity: 0.8;
+
+
+}
+.label {
+    color: #152823;
+    margin: 1rem;
+}
+.userName, .password {
+    color: #152823;
+    padding: 1rem;
+    /*display: flex;
+    justify-content: flex-start;
+    align-items: center;*/
 }

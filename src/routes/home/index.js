@@ -17,10 +17,10 @@ export function HomeRoute()
     }
 
     return <div className="home-route">
-        A
+
         {currentUser ? <div>Hej {currentUser}!</div> : null}
-        {currentUser ? <input type="button" value="Sign out" className="btn" onClick={() => setCurrentUser()} /> : <SignIn onAuthenticate={handleAuth} />}
-        B
+        {currentUser ? <input type="button" value="Sign out" onClick={() => setCurrentUser()} /> : <SignIn onAuthenticate={handleAuth} />}
+
 
     </div>
 }
