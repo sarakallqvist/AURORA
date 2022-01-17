@@ -1,26 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { ImageFeed } from "../../components/image-feed";
 import { SignIn } from "../../components/sign-in";
 
 require("./style.css");
 
 
-export function HomeRoute()
+export function HomeRoute(props)
 {
-    const [currentUser, setCurrentUser] = useState();
+    const {
+        currentUser,
+        setCurrentUser,
+    } = props;
+    const [selectedImage, setSelectedImage] = useState();
     const [imageFeed, setImageFeed] = useState([
-
     ]);
 
-    function handleAuth(username, password)
+    useEffect(() => {
+        if (!selectedImage) return;
+        setImageFeed(prev => [
+            selectedImage,
+            ...prev,
+        ]);
+    }, [selectedImage]);
+
+
+    function handleUpload(e)
     {
-        setCurrentUser(username);
+        setSelectedImage(URL.createObjectURL(e.target.files[0]));
     }
 
     return <div className="home-route">
-
-        {currentUser ? <div>Hej {currentUser}!</div> : null}
-        {currentUser ? <input type="button" value="Sign out" onClick={() => setCurrentUser()} /> : <SignIn onAuthenticate={handleAuth} />}
-
-
+        <ImageFeed feed={imageFeed} onChange={handleUpload} />
     </div>
 }
