@@ -13,7 +13,7 @@ export function ImageRoute(props)
     } = props;
     const [selectedImage, setSelectedImage] = useState();
     const [imageFeed, setImageFeed] = useState([
-        "https://wwwwwfse.cdn.triggerfish.cloud/uploads/2018/12/tiger_medium_ww259880-768x511.jpg"
+        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
     ]);
 
     useEffect(() => {

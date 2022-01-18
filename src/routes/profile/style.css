@@ -1,0 +1,22 @@
+.profile-route {
+    background-color: #cdbbb2;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: .5rem;
+    min-height: 80vh;
+
+}
+
+.profile-bio {
+color: #54433A;
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+}
+.profile-gallery {
+    background: url(profile-collage.jpg) no-repeat center;
+    object-fit: contain;
+        margin: 10px;
+        min-height: 80vh;
+}

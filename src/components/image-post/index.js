@@ -21,7 +21,7 @@ export function ImagePost(props)
             backgroundImage: `url(${image})`,
         }} />
         {isLiked ? (
-            <input type='button' value='Dislike' onClick={toggleLike} />
+            <input type='button' value='Unlike' onClick={toggleLike} />
         ) : (
             <input type='button' value='Like' onClick={toggleLike} />
         )}

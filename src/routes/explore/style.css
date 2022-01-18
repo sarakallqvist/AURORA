@@ -1,0 +1,17 @@
+.explore-route {
+    background-color: #cdbbb2;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: .5rem;
+    min-height: 80vh;
+
+
+}
+.explore-gallery {
+background: url(collage.jpg) no-repeat center;
+object-fit: fill;
+    margin: 10px;
+    min-height: 70vh;
+}
+
