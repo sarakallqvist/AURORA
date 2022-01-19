@@ -1,0 +1,9 @@
+.image-route
+{   background-color: #cdbbb2;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    min-height: 5rem;
+    border-radius: 1%;
+}

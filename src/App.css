@@ -1,9 +1,12 @@
-/*--polished-pine: #539d8b;
---green-sheen: #7ca798;
---ash-gray: #a4b1a5;
---pale-silver: #cdbbb2;
---languid-lavender: #d3c4d1;
-font-family: 'Voltaire', sans-serif;
+/*Text: Dark Liver Horses #54433A
+Boxshadow: Umber #736158
+Button: Cinerous #917F76
+Hover: languid-lavender #d3c4d1
+Background: Pale Silver #cdbbb2
+Active: lilac: #C696C2
+
+Headlines: 'Voltaire', sans-serif;
+Text: 'Lato', sans-serif;
 */
 .App {
   text-align: left;
@@ -11,46 +14,75 @@ font-family: 'Voltaire', sans-serif;
   background: url(../src/images/pastel/pier.jpg) no-repeat center center fixed;
   min-height: 100vh;
   font-family: 'Lato', sans-serif;
+  color: #54433A;
   font-size: 14px;
+  letter-spacing: .1rem;
+  text-align: center;
 
 }
-input[type=button] {
-  background-color: #CDBBB2;
+
+input[type="text"] {
+  max-width: 40rem;
+  border-radius: 1%;
+  width: 2rem;
   font-family: 'Lato', sans-serif;
-  color: #152823;
+  color: #54433A;
+
+}
+
+input[type="password"] {
+  max-width: 40rem;
+  border-radius: 1%;
+  width: 2rem;
+  font-family: 'Lato', sans-serif;
+  color: #54433A;
+
+}
+input[type=button] , input[type=submit]{
+  background-color: #917F76;
+  font-family: 'Lato', sans-serif;
+  color: #54433A;
   font-size: 16px;
+  letter-spacing: .1rem;
+  font-weight: bold;
   width: 6rem;
   border-radius: 4%;
   border: none;
   height: 2rem;
-  margin: 2rem;
+  margin: 1rem;
   cursor: pointer;
-  box-shadow: 2px 3px #9C858F;
+  box-shadow: 2px 3px #736158;
 }
-input[type=button]:hover {
+input[type=button]:hover , input[type=submit]:hover{
   background-color: #D3C4D1;
+}
+
+input[type='button'].active, input[type=submit].active
+{
+  background-color: #C696C2;
 }
 
 input [type=button], [value="Sign out"] {
   position: absolute;
-  top: 1;
+  top: 0;
   right: 0;
 }
-input[type=text] input[type=password]{
+input[type=text], input[type=password]{
   font-family: 'Lato', sans-serif;
   font-size: 14px;
-  color: #152823;
+  color: #54433A;
   border: none;
-  width: auto;
+  width: 24rem;
   height: 2rem;
+  margin: auto;
 }
+
 nav {
   display: flex;
   justify-content: space-evenly;
 }
 
-
-.icon-nav {
+.icon-nav, .logo-nav {
   text-align: center;
   height: 30px;
   width: 30px;
@@ -61,39 +93,23 @@ h3 {
   font-size: 24px;
   letter-spacing: 1.5px;
   text-align: center;
+  color: #54433A;
+  margin-top: 1rem;
   }
-/*
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  h4 {
+    font-family: 'Voltaire', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #54433A;
+    margin-top: 1rem;
+    }
+
+  hr {
+    color:#736158;
+    height: 2px;
+    border-width: 0;
+    background-color: #736158;
+    width: 90%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/

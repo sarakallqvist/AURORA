@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { ImageFeed } from "../../components/image-feed";
+import { ImagePost } from "../../components/image-post";
+import { ImageUpload } from "../../components/image-upload";
 import { SignIn } from "../../components/sign-in";
 
 require("./style.css");
@@ -8,13 +10,11 @@ require("./style.css");
 export function ImageRoute(props)
 {
     const {
-        currentUser,
-        setCurrentUser,
+        imageFeed,
+        setImageFeed,
     } = props;
+
     const [selectedImage, setSelectedImage] = useState();
-    const [imageFeed, setImageFeed] = useState([
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
-    ]);
 
     useEffect(() => {
         if (!selectedImage) return;
@@ -30,7 +30,11 @@ export function ImageRoute(props)
         setSelectedImage(URL.createObjectURL(e.target.files[0]));
     }
 
-    return <div className="home-route">
-        <ImageFeed feed={imageFeed} onChange={handleUpload} />
+    return <div className="image-route">
+        <ImageUpload onChange={handleUpload} />
+        {selectedImage ? <div>
+            Image Uploaded!
+            <ImagePost image={selectedImage} hideLike/>
+        </div> : null}
     </div>
 }

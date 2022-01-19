@@ -1,0 +1,17 @@
+.search-route {
+    background-color: #cdbbb2;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: .8rem;
+    /*min-height: 80vh;*/
+    border-radius: 1%;
+    max-height: 20rem;
+}
+
+/*.search {
+    max-width: 40rem;
+    margin: auto;
+    padding: 1rem;
+}
+*/

@@ -7,6 +7,7 @@ export function ImagePost(props)
 {
     const {
         image,
+        hideLike
     } = props;
 
     const [isLiked, setIsLiked] = useState(false);
@@ -20,10 +21,14 @@ export function ImagePost(props)
         <div className='image' style={{
             backgroundImage: `url(${image})`,
         }} />
-        {isLiked ? (
-            <input type='button' value='Unlike' onClick={toggleLike} />
-        ) : (
-            <input type='button' value='Like' onClick={toggleLike} />
-        )}
+        { hideLike ? null :
+            <div >
+                {isLiked ? (
+                    <input type='button' value='Unlike' onClick={toggleLike} />
+                ) : (
+                    <input type='button' value='Like' onClick={toggleLike} />
+                )}
+            </div>
+        }
     </div>
 }

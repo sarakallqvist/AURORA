@@ -6,17 +6,27 @@
     padding: 1rem;
     background-color: #CDBBB2;
     opacity: 0.8;
+    margin: auto;
+    margin-top: 1rem;
+}
 
-
+.signin-form input[type='button'].active
+{
+    background-color: #C696C2;
+}
+input[type=button]:hover {
+    background-color: #D3C4D1;
 }
 .label {
-    color: #152823;
+    color: #54433A;
     margin: 1rem;
+    min-width: 10rem;
+    text-align: left;
 }
-.userName, .password {
-    color: #152823;
-    padding: 1rem;
-    /*display: flex;
+.userName, .password, .email {
+    color: #54433A;
+    padding: .5rem;
+    display: flex;
     justify-content: flex-start;
-    align-items: center;*/
+    align-items: center;
 }

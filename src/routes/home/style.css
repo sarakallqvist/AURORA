@@ -1,0 +1,23 @@
+.home-route {
+    background-color: #cdbbb2;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 1%;
+    display: block;
+    align-content: center;
+}
+
+.logo-home {
+    height: 12rem;
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+
+.slogan {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+}

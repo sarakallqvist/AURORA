@@ -5,8 +5,7 @@
     margin-top: 2rem;
     padding: .5rem;
     min-height: 80vh;
-
-
+    border-radius: 1%;
 }
 .explore-gallery {
 background: url(collage.jpg) no-repeat center;

@@ -5,7 +5,7 @@
     margin-top: 2rem;
     padding: .5rem;
     min-height: 80vh;
-
+    border-radius: 1%;
 }
 
 .profile-bio {
@@ -13,10 +13,27 @@ color: #54433A;
 text-align: center;
 font-size: 18px;
 font-weight: bold;
+margin: auto;
+margin-bottom: 2rem;
 }
-.profile-gallery {
-    background: url(profile-collage.jpg) no-repeat center;
-    object-fit: contain;
-        margin: 10px;
-        min-height: 80vh;
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 8rem;
+    max-height: 10rem;
+}
+
+.profile-bio {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-content: center;
+    max-width: 90%;
+
+}
+textarea {
+    max-width: 80%;
+    min-width: 18rem;
+    height: 10rem;
 }

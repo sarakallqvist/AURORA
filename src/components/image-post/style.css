@@ -1,13 +1,15 @@
 .image-post
 {
     background: rgba(255, 255, 255, 0.3);
-    border-radius: 1em;
-    margin: 1em;
+    border-radius: 1%;
+    margin: .5em;
+    padding: .5rem;
 }
 
 .image-post .image
 {
-    min-height: 150px;
+    min-width: 20rem;
+    min-height: 20rem;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
