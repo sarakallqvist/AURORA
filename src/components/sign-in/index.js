@@ -1,4 +1,5 @@
 import { useState } from "react"
+const logo = require('../../logos/logo.png');
 
 require("./style.css");
 
@@ -61,6 +62,8 @@ export function SignIn(props)
             </div>
         ) : null}
 
+
+
         {authMode === 'register' ? (
             <div>
                 <form onSubmit ={() => {
@@ -94,5 +97,11 @@ export function SignIn(props)
                 </form>
             </div>
         ) : null}
+
+<div>
+            <img src={logo} className='logo-home'/>
+        </div>
+        <div className="slogan" > Nature never goes out of style </div>
     </div>
+
 }
